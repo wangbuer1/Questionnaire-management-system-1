@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="xxxx" extends="struts-default">
+        <action name="addquestion" class="com.myapp.actions.SurveyAction" method="execute">
+            <result name="success">/view_QO.jsp</result>
+        </action>
+        <action name="add_user" class="com.myapp.actions.AddUserAction" method="execute">
+            <result name="success">/adduser_g.jsp</result>
+        </action>
+        <action name="addwj" class="com.myapp.actions.SurveyAction" method="execute">
+            <result name="success">/addWJ.jsp</result>
+        </action>
+        <action name="find" class="com.myapp.actions.FindAction" method="execute">
+            <result name="success">/home1_1.jsp</result>
+        </action>
+        <action name="register" class="com.myapp.actions.RegisterAction" method="execute">
+            <result name="success">/login1.jsp</result>
+        </action>
+        <action name="userLogin" class="com.myapp.actions.Login1Action" method="execute">
+            <result name="success">/login1.jsp</result>
+        </action>
+        <action name="login2" class="com.myapp.actions.Login2Action" method="execute">
+            <result name="success">/login2.jsp</result>
+        </action>
+        <action name="logout" class="com.myapp.actions.LogoutAction" method="execute">
+            <result name="success">/login1.jsp</result>
+        </action>
+        <action name="imgAction" class="com.myapp.actions.ValidatorAction" method="execute">
+            <result name="success"></result>
+        </action>
+        <action name="delete" class="com.myapp.actions.DeleteAction" method="execute">
+            <result name="success">/view_user.jsp</result>
+        </action>
+        <action name="displayAction" class="com.myapp.actions.DisplayAction" method="execute">
+            <result name="success">/b.jsp</result>
+        </action>
+        <action name="Tj" class="com.myapp.actions.Tj" method="execute">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="changinformation" class="com.myapp.actions.ChanginformationAction" method="execute">
+            <result name="success"></result>
+            
+        </action>
+    </package>
+</struts>
